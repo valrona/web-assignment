@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+                <nav>
+                        <img src="./images/profile.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>flower collector</p>
+                    <h1>Hi, I'm <span>Rona</span> <br> form Europe</h1>
+                </div>
+        </div>
+    </div>
+<!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">     
+                <div class="about-col-1">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                              <img src="./images/Hydrangea.jpg" style="width:90%" >
+                            </div>                          
+                            <div class="mySlides fade">
+                              <img src="./images/Tulip.jpg" style="width:90%">                
+                            </div>
+                            <div class="mySlides fade">
+                              <img src="./images/Forget-me-not.jpg" style="width:90%"> 
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                          </div>
+                          <br>
+                </div>
+                <div class="about-col-2">
+                    <div class="tab-title">
+                        <h1 class="tab-links active-link" onclick="opentab('hydrangea')" >Hydrangea</h1>
+                        <h1 class="tab-links" onclick="opentab('tulip')" >Tulip</h1>
+                        <h1 class="tab-links" onclick="opentab('forget-me-not')" >Forget-me-not</h1>
+                    </div>
+                    <div class="tab-contents active-tab" id="hydrangea">
+                        <p>Hydrangea , commonly named the hortensia, is a genus of more than 70 species of flowering plants native to Asia and the Americas. By far the greatest species diversity is in eastern Asia, notably China, Korea, and Japan.</p>
+                        <ul>
+                            <li><span>Hydrangea arborescens </span> <br> (smooth hydrangea) eastern North America</li>
+                            <li><span> Hydrangea glaucescens </span> <br> China, Myanmar and Vietnam</li>
+                            <li><span> Hydrangea macrophylla</span>  <br> (bigleaf hydrangea) southeast Japan, southern China</li>
+                            <li><span>Hydrangea hirta</span> <br>Japan</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tulip">
+                        <p>Tulips are spring-blooming perennial herbaceous bulbiferous geophytes in the Tulipa genus. Their flowers are usually large, showy, and brightly coloured, generally red, orange, pink, yellow, or white.</p>
+                        <ul>
+                            <li><span>Clusianae</span> <br>(4 species)</li>
+                            <li><span> Orithyia </span> <br>(4 species)</li>
+                            <li><span> Tulipa </span>  <br>(52 species) </li>
+                            <li><span>Eriostemones</span> <br>(16 species)</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="tab-contents" id="forget-me-not">
+                        <p>Myosotis is a genus of flowering plants in the family Boraginaceae. Myosotis alpestris is the official flower of Alaska and Dalsland, Sweden. Plants of the genus are not to be confused with Chatham Islands' forget-me-nots, which belong to the related genus Myosotidium.</p>
+                        <ul>
+                            <li><span> Myosotis alpestris </span><br>(alpine forget-me-not)</li>
+                            <li><span>Myosotis arvensis</span><br>(field forget-me-not)</li>
+                            <li><span>Myosotis latifolia</span><br>(broadleaf forget-me-not)</li>
+                            <li><span>Myosotis laxa</span><br> (tufted forget-me-not or bay forget-me-not)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Portfolio-->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">Location</h1>
+            <div class="location-list">
+                <div class="location">
+                    <img src="./images/Hydrangea-in-Japan.jpg">
+                    <div class="layer">
+                        <h3>Hydrangea in Japan</h3>
+                        <p>Hydrangeas are a common sight in Japan and are a significant part of Japanese culture. They are found in gardens, parks, and temples throughout the country.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src="./images/Tulip-in-Netherlands.jpg">
+                    <div class="layer">
+                        <h3>Tulip in Netherlands</h3>
+                        <p>Tulips are found in the Netherlands, Central Asia, and Turkey.
+                            Tulips were brought to the Netherlands from the Ottoman Empire in the 15th century.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src="./images/forget-me-not-in-asia.jpg">
+                    <div class="layer">
+                        <h3>Forget-Me-Not in Asia</h3>
+                        <p>The Chinese forget-me-not and the Asian forget-me-not are both flowering plants native to Asia. They are related to the common forget-me-not of temperate gardens.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+<!--contact-->
+    <div id="contact">
+        <div class="contact-container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0912345678</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Rona. Made With <i class="fa-solid fa-heart"></i> By Flower Portfolio</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var tabimgs = document.getElementsByClassName("tab-imgs");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+    </script>
+    
+</body>
+</html>
